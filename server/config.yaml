@@ -1,0 +1,26 @@
+server:
+  address: ":8001"
+  openapiPath: "/api.json"
+  swaggerPath: "/swagger"
+
+database:
+  default:
+    type: "mysql"
+    link: "root:123456@tcp(127.0.0.1:3306)/video_platform"
+    debug: true
+
+mqtt:
+  broker: "tcp://112.6.224.25:20042"
+  clientIdPrefix: "server_"
+  imageDir: "images"
+  subscribeTopics:
+    - "device/+/image"
+  qos: 1
+  keepAlive: 60
+  autoReconnect: true
+  maxReconnectInterval: 10
+
+logger:
+  path: "logs"
+  level: "all"
+  stdout: true
