@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 发光效果 -->
+  <circle cx="64" cy="64" r="62" fill="url(#glow)" />
+  
+  <!-- 警徽外环 -->
+  <circle cx="64" cy="64" r="60" stroke="url(#goldGradient)" stroke-width="4"/>
+  
+  <!-- 五角星 -->
+  <path d="M64 20L74.4 52.2L108 52.2L81.6 72.6L92 104.8L64 84.4L36 104.8L46.4 72.6L20 52.2L53.6 52.2L64 20Z" fill="url(#starGradient)"/>
+  
+  <!-- 橄榄枝装饰 -->
+  <path d="M30 64C30 81.6731 44.3269 96 62 96" stroke="url(#goldGradient)" stroke-width="3"/>
+  <path d="M98 64C98 81.6731 83.6731 96 66 96" stroke="url(#goldGradient)" stroke-width="3"/>
+  
+  <!-- 内圈 -->
+  <circle cx="64" cy="64" r="40" stroke="url(#goldGradient)" stroke-width="2" fill="none"/>
+  
+  <!-- 渐变定义 -->
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(64 64) rotate(90) scale(62)">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+    
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FDB931"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+    
+    <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FFED4A"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+  </defs>
+</svg> 
